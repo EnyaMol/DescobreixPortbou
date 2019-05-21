@@ -1,0 +1,18 @@
+.general{
+  max-height: 80vh;
+}
+.miniatures{
+  max-width: 100%;
+  margin: 5px;
+}
+.card{
+  align-items: center;
+  margin: 5px;
+  padding: 0;
+}
+.card-body{
+  padding: 10px;
+}
+.card-img-top{
+  padding: 0;
+}

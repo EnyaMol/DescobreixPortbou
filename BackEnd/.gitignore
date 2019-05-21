@@ -1,0 +1,4 @@
+.idea/
+*.xml
+venv/
+db.sqlite3
