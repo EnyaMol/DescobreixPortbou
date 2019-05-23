@@ -23,6 +23,7 @@ def json(request):
         rutes = {'id':idruta, 'nomruta': nomruta, 'descripcio': descripcio, 'distanciakm': distancia_km, 'dificultat': dificultat}
         ru.append(rutes)
 
+
     rutas = {'rutas': ru}
 
     return JsonResponse(rutas)
