@@ -1,6 +1,15 @@
 #titol{
   color: white;
 }
+footer{
+  min-height: 10vh;
+}
+.foter{
+  max-width: 100vw;
+}
+.colorback{
+  background-color: #363636;
+}
 @media screen and (min-width : 0px) and (max-width: 426px){
   #carouselExampleIndicators,
   .carousel-inner,
@@ -81,6 +90,10 @@
   .titol,
   .desc{
     display: none !important;
+  }
+  .ico{
+    max-height: 3vh;
+    max-width: 3vh;
   }
 }
 

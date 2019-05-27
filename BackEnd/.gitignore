@@ -2,3 +2,4 @@
 *.xml
 venv/
 db.sqlite3
+migrations/

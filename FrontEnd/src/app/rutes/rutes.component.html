@@ -1,46 +1,83 @@
 <div class="general">
   <div class="miniatures row">
-    <div class="col-12 col-sm-4 col-md-3" *ngFor="let r of rutas">
+    <div class="col-12 col-sm-3 col-md-4" *ngFor="let r of rutas">
       <div class="card">
         <h5 class="card-title">{{r.nomruta}}</h5>
+            <div class="card-body">
+              <div *ngIf="r.id===1" style="height: 40vh; width: 40vh;"
+                  leaflet
+                [leafletOptions]="options"
+                (leafletMapReady)="onMapReady1($event)">
+              </div>
+              <div *ngIf="r.id===2" style="height: 40vh; width: 40vh;"
+                  leaflet
+                [leafletOptions]="options2"
+                (leafletMapReady)="onMapReady2($event)">
+              </div>
+              <div *ngIf="r.id===3" style="height: 40vh; width: 40vh;"
+                  leaflet
+                [leafletOptions]="options3"
+                (leafletMapReady)="onMapReady3($event)">
+              </div>
+              <div *ngIf="r.id===4" style="height: 40vh; width: 40vh;"
+                  leaflet
+                [leafletOptions]="options4"
+                (leafletMapReady)="onMapReady4($event)">
+              </div>
+              <div *ngIf="r.id===5" style="height: 40vh; width: 40vh;"
+                  leaflet
+                [leafletOptions]="options5"
+                (leafletMapReady)="onMapReady5($event)">
+              </div>
+              <div *ngIf="r.id===6" style="height: 40vh; width: 40vh;"
+                  leaflet
+                [leafletOptions]="options6"
+                (leafletMapReady)="onMapReady6($event)">
+              </div>
+
+          </div>
           <a href="" data-toggle="modal" data-target="#modal"
-             (click)="nom = r.nomruta; desc = r.descripcio; dis = r.distanciakm; dif = r.dificultat;">
-
-            </a>
-          <div class="card-body">
-            <p>Mapa</p>
-            <div *ngIf="r.id===1" style="height: 40vh; width: 40vh;"
-                leaflet
-              [leafletOptions]="options"
-              (leafletMapReady)="onMapReady($event)">
-            </div>
-            <div *ngIf="r.id===4" style="height: 40vh; width: 40vh;"
-                leaflet
-              [leafletOptions]="options2"
-              (leafletMapReady)="onMap($event)">
-            </div>
-
+               (click)="nom = r.nomruta; desc = r.descripcio; dis = r.distanciakm; dif = r.dificultat;">
+              <p>Més informació</p>
+          </a>
         </div>
-      </div>
-      <div class="modal"  id="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">{{nom}}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>{{desc}}</p>
-              <p>Dificultat : {{dif}}</p>
-              <p>Distancia en Kilometres : {{dis}}km</p>
+        <div class="modal"  id="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">{{nom}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>{{desc}}</p>
+                <p>Dificultat : {{dif}}</p>
+                <p>Distancia en Kilometres : {{dis}}km</p>
 
-            <div class="modal-footer">
+              <div class="modal-footer">
 
+              </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </div>
+<footer class="colorback col-12">
+  <div class="foter row">
+    <div class="politica col-4">
+      <a>Politica de Privacitat</a>
+    </div>
+    <div class="socialajunta col-4 row">
+      <div class="social col-6">
+        <img class="ico" src="../assets/instagram.png">
+      </div>
+      <div class="social col-6">
+          <img class="ico" src="../assets/facebook.png">
+      </div>
+    </div>
+    <div class="contacte col-4"></div>
+  </div>
+</footer>

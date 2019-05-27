@@ -1,5 +1,5 @@
 .general{
-  max-height: 80vh;
+  min-height: 100vh;
 }
 .miniatures{
   max-width: 100%;
@@ -9,6 +9,7 @@
   align-items: center;
   margin: 5px;
   padding: 0;
+  background-color: #99c0ff;
 }
 .card-body{
   padding: 10px;
@@ -16,3 +17,19 @@
 .card-img-top{
   padding: 0;
 }
+.leaflet-control-container .leaflet-routing-container-hide {
+    display: none;
+}
+
+footer{
+  min-height: 10vh;
+  bottom: 0;
+}
+.colorback{
+  background-color: #363636;
+}
+
+.ico{
+    max-height: 3vh;
+    max-width: 3vh;
+  }

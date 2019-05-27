@@ -1,6 +1,8 @@
-.general{
-  max-height: 80vh;
-}
+
+.ico{
+    max-height: 3vh;
+    max-width: 3vh;
+  }
 .miniatures{
   max-width: 100%;
   margin: 5px;
@@ -15,4 +17,12 @@
 }
 .card-img-top{
   padding: 0;
+}
+footer{
+  min-height: 10vh;
+  bottom: 0;
+}
+
+.colorback{
+  background-color: #363636;
 }

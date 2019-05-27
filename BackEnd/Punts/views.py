@@ -12,11 +12,12 @@ def json(request):
     pu = []
     for pun in punt:
         contador=contador+1
+        idpunt = pun.id
         nompunt = pun.nompunt
         descripcio = pun.descripcio
         longitud = pun.latitud
         latitud = pun.longitud
-        punts = {'nompunt': nompunt, 'descripcio': descripcio, 'longitud': longitud, 'latitud': latitud}
+        punts = {'id':idpunt,'nompunt': nompunt, 'descripcio': descripcio, 'longitud': longitud, 'latitud': latitud}
         pu.append(punts)
 
     punts = {'punts': pu}
