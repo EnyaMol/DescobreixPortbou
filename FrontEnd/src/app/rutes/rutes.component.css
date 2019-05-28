@@ -1,24 +1,17 @@
+#titol{
+  color: white;
+}
+footer{
+  min-height: 10vh;
+}
+.foter{
+  max-width: 100vw;
+}
+.colorback{
+  background-color: #363636;
+}
 .general{
   min-height: 100vh;
-}
-.miniatures{
-  max-width: 100%;
-  margin: 5px;
-}
-.card{
-  align-items: center;
-  margin: 5px;
-  padding: 0;
-  background-color: #99c0ff;
-}
-.card-body{
-  padding: 10px;
-}
-.card-img-top{
-  padding: 0;
-}
-.leaflet-control-container .leaflet-routing-container-hide {
-    display: none;
 }
 
 footer{
@@ -30,6 +23,50 @@ footer{
 }
 
 .ico{
-    max-height: 3vh;
-    max-width: 3vh;
+  max-height: 3vh;
+  max-width: 3vh;
+}
+.card-title{
+  text-align: center;
+}
+
+@media screen and (min-width : 0px) and (max-width: 426px){
+  .miniatures{
+    max-width: 100vh;
+    margin: 2vh;
   }
+  .card{
+    align-items: center;
+    padding: 1em;
+    margin: 0.5em;
+
+  }
+  .card-body{
+    padding: 0;
+  }
+  .btn{
+    max-height: 5vh;
+    margin-top: 0.8em;
+  }
+}
+
+@media screen and (min-width : 427px) and (max-width: 769px){}
+
+@media screen and (min-width : 770px) and (max-width: 1600px){
+  .miniatures{
+    max-width: 100%;
+    margin: 5px;
+  }
+  .card{
+    align-items: center;
+    margin: 5px;
+    padding: 0;
+
+  }
+  .card-body{
+    padding: 10px;
+  }
+  .card-img-top{
+    padding: 0;
+  }
+}
