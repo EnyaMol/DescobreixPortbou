@@ -43,25 +43,24 @@ footer{
   .descripcio{
     color: white;
   }
+  .ico{
+    max-height: 3vh;
+    max-width: 3vh;
+  }
 }
 
 @media screen and (min-width : 427px) and (max-width: 769px){
   #carouselExampleIndicators,
   .carousel-inner,
   .carousel-item,
+  .img,
   section {
+    max-height: 80vh;
     min-height: 80vh;
-    max-height: 80vh;
-  }
-  img{
-    max-height: 80vh;
   }
   .carousel-caption{
-    background-color: rgb(43,102,154,0.8);
+    background-color: rgba(43,102,154,0.8);
     max-height: 50%;
-  }
-  #descripciomovil{
-    display: none;
   }
   .descripciomovil,
   .descripcio,
@@ -69,6 +68,10 @@ footer{
   .titol,
   .desc{
     display: none !important;
+  }
+  .ico{
+    max-height: 3vh;
+    max-width: 3vh;
   }
 }
 
@@ -78,12 +81,12 @@ footer{
   .carousel-item,
   section {
     max-height: 80vh;
+    min-height: 80vh;
   }
   .carousel-caption{
-    background-color: rgb(43,102,154,0.8);
+    background-color: rgba(43,102,154,0.8);
     max-height: 50%;
   }
-
   .descripciomovil,
   .descripcio,
   .titolmovil,
