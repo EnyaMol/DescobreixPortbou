@@ -18,7 +18,7 @@ export class PuntsComponent implements OnInit {
   private lat: number;
   private lon: number;
 
-  private punts: Punt[];
+  public punts: Punt[];
 
   constructor(private PuntsService: ApipuntsService) { }
 

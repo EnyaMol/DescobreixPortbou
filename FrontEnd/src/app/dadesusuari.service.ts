@@ -9,12 +9,12 @@ export class DadesusuariService {
 
   registra(userData): Observable <any> {
 
-    return this.http.post('http://127.0.0.1:8000/api/users/', userData);
+    return this.http.post('http://descobreixportbou.pythonanywhere.com/api/users/', userData);
 
   }
   log(userData): Observable <any> {
 
-    return this.http.post('http://127.0.0.1:8000/api/auth/', userData);
+    return this.http.post('http://descobreixportbou.pythonanywhere.com/api/auth/', userData);
 
   }
 }

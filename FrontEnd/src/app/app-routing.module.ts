@@ -7,7 +7,7 @@ import { PuntsComponent } from './punts/punts.component';
 import {AccesComponent} from "./acces/acces.component";
 
 const routes: Routes = [
-    {path: '', redirectTo: 'inici', pathMatch: 'full'},
+    {path: '', component: HomeComponent},
     {path: 'inici', component: HomeComponent},
     {path: 'rutes', component: RutesComponent},
     {path: 'punts', component: PuntsComponent},

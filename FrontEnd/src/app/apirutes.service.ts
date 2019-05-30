@@ -10,7 +10,7 @@ export class ApirutesService {
 
   private ruta:Ruta[];
   private rutagran: string;
-  private url = 'http://127.0.0.1:8000/apirutes/';
+  private url = 'http://descobreixportbou.pythonanywhere.com/apirutes/';
   constructor(private http: HttpClient) {}
 
   public getJSON(): Observable<any> {

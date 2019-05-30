@@ -14,6 +14,7 @@ import * as L from 'leaflet';
   styleUrls: ['./rutes.component.css']
 })
 export class RutesComponent implements OnInit {
+
   constructor(private RutesService: ApirutesService) { }
   private id: number;
   private nom = '';
@@ -21,7 +22,7 @@ export class RutesComponent implements OnInit {
   private dis: number;
   private dif: number;
 
-  private rutas: Ruta[];
+  public rutas: Ruta[];
   options = { zoom: 10, layers: [
     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {attribution: '© OpenStreetMap contributors'})],

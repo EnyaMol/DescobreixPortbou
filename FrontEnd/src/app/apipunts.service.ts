@@ -10,7 +10,7 @@ export class ApipuntsService {
 
   private punts:Punt[];
   private rutagran: string;
-  private url = 'http://127.0.0.1:8000/apipunts/';
+  private url = 'http://descobreixportbou.pythonanywhere.com/apipunts/';
   constructor(private http: HttpClient) {}
 
   public getJSON(): Observable<any> {
