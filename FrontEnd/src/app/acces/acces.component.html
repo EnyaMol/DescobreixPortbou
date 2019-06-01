@@ -1,11 +1,41 @@
-<div>
-  <h6>REGIATRE</h6>
-  <input type="text" [(ngModel)]="register.username" placeholder="Username"><br>
-  <input type="text" [(ngModel)]="register.email"  placeholder="email"><br>
-  <input type="password" [(ngModel)]="register.password"  placeholder="Password">
-  <button (click)="registra()">Registra't</button>
-  <button (click)="log()">Entra!</button>
-</div>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+             <!-- Background image for card set in CSS! -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Registre</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text"  name="username" id="inputUserame" class="form-control" placeholder="NomUsuari" required autofocus>
+                <label for="inputUserame">nomusuari</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                <label for="inputEmail">Correo electronic</label>
+              </div>
+
+              <hr>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Contrasenya</label>
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" (click)="registra()" type="submit">Register</button>
+              <a class="d-block text-center mt-2 small" href="#">Sign In</a>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign up with Facebook</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <footer class="colorback col-12">
   <div class="foter row">
     <div class="politica col-4">

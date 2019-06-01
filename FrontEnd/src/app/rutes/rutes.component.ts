@@ -23,39 +23,35 @@ export class RutesComponent implements OnInit {
   private dif: number;
 
   public rutas: Ruta[];
-  options = { zoom: 10, layers: [
+  options = { zoom: 9, layers: [
     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {attribution: '© OpenStreetMap contributors'})],
-    center: latLng(42.2642651, 2.9477342)};
+    center: latLng(42.4268926, 3.1038967)};
 
-  options2 = { zoom: 13, layers: [
+  options2 = { zoom: 10, layers: [
     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {attribution: '© OpenStreetMap contributors'})],
-    center: latLng(42.2642651, 2.9477342)};
+    center: latLng(42.4268926, 3.1038967)};
 
-  options3 = { zoom: 13, layers: [
+  options3 = { zoom: 11, layers: [
     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {attribution: '© OpenStreetMap contributors'})],
-    center: latLng(42.2642651, 2.9477342)};
+    center: latLng(42.4268926, 3.1038967)};
 
-  options4 = { zoom: 13, layers: [
+  options4 = { zoom: 10, layers: [
     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {attribution: '© OpenStreetMap contributors'})],
-    center: latLng(42.2642651, 2.9477342),
-  instructions : false};
+    center: latLng(42.4268926, 3.1038967)};
 
-  options5 = { zoom: 13, layers: [
+  options5 = { zoom: 10, layers: [
     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {attribution: '© OpenStreetMap contributors'})],
-    center: latLng(42.2642651, 2.9477342)};
+    center: latLng(42.4268926, 3.1038967)};
 
   options6 = { zoom: 13, layers: [
     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {attribution: '© OpenStreetMap contributors'})],
-    center: latLng(42.2642651, 2.9477342)};
-
-
-  // Override default Icons0
+    center: latLng(42.4268926, 3.1038967)};
 
   getJSON() {
     this.RutesService.getJSON().subscribe(data => {
@@ -69,18 +65,17 @@ export class RutesComponent implements OnInit {
   onMapReady1(map) {
     L.Routing.control({
       waypoints: [
-        L.latLng(42.2642651, 2.9477342),
-        L.latLng(42.4268649, 3.1214067)
+        L.latLng(42.4270309, 3.1564453),
+        L.latLng(42.4252411, 3.1596103)
       ],
       show: false
     }).addTo(map);
-    map.dragging.disable();
   }
   onMapReady2(map2) {
     L.Routing.control({
       waypoints: [
-        L.latLng(39.86232, -4.0694704),
-        L.latLng(41.3948976, 2.0787274)
+        L.latLng(42.4268545, 3.1574629),
+        L.latLng(42.425726, 3.160263)
       ],
       show: false
     }).addTo(map2);
@@ -88,8 +83,8 @@ export class RutesComponent implements OnInit {
   onMapReady3(map3) {
     L.Routing.control({
       waypoints: [
-        L.latLng(39.86232, -4.0694704),
-        L.latLng(41.3948976, 2.0787274)
+        L.latLng(42.426864, 3.1214067),
+        L.latLng(42.4383197, 3.1187113)
       ],
       show: false
     }).addTo(map3);
@@ -97,8 +92,8 @@ export class RutesComponent implements OnInit {
   onMapReady4(map4) {
     L.Routing.control({
       waypoints: [
-        L.latLng(39.86232, -4.0694704),
-        L.latLng(41.3948976, 2.0787274)
+        L.latLng(42.426864, 3.1214067),
+        L.latLng(42.3610187, 3.1421858)
       ],
       show: false
     }).addTo(map4);
@@ -106,9 +101,8 @@ export class RutesComponent implements OnInit {
   onMapReady5(map5) {
     L.Routing.control({
       waypoints: [
-        L.latLng(42.4267366, 3.1555436),
-        L.latLng(42.4377397, 3.1179066),
-        L.latLng(42.4602534, 3.0664659)
+        L.latLng(42.426864, 3.1214067),
+        L.latLng(42.4602534, 3.0664663)
       ],
       show: false
     }).addTo(map5);
@@ -116,8 +110,8 @@ export class RutesComponent implements OnInit {
   onMapReady6(map6) {
     L.Routing.control({
       waypoints: [
-        L.latLng(39.86232, -4.0694704),
-        L.latLng(41.3948976, 2.0787274)
+        L.latLng(42.4304198, 3.1618997),
+        L.latLng(42.427286, 3.158519)
       ],
       show: false
     }).addTo(map6);

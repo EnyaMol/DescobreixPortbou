@@ -1,4 +1,3 @@
-
 .ico{
     max-height: 3vh;
     max-width: 3vh;
@@ -25,4 +24,68 @@ footer{
 
 .colorback{
   background-color: #363636;
+}
+
+@media screen and (min-width : 0px) and (max-width: 426px){
+  .miniatures{
+    max-width: 100vw;
+    margin: 2vh;
+  }
+  .card{
+    align-items: center;
+    padding: 1em;
+    margin: 0.5em;
+
+  }
+  .card-body{
+    padding: 0;
+  }
+  .btn{
+    max-height: 5vh;
+    margin-top: 0.8em;
+  }
+}
+
+@media screen and (min-width : 427px) and (max-width: 769px){
+  .miniatures{
+    max-width: 100vw;
+    margin: 2vh;
+  }
+  .card{
+    align-items: center;
+    padding: 1em;
+    margin: 0.5em;
+    height: 65vh;
+  }
+  .card-body{
+    padding: 0;
+  }
+  .btn{
+    max-height: 5vh;
+    margin-top: 0.8em;
+  }
+}
+
+@media screen and (min-width : 770px) and (max-width: 1600px){
+  .miniatures{
+    max-width: 100%;
+    margin: 5px;
+  }
+  .card{
+    align-items: center;
+    margin: 5px;
+    padding: 0;
+    height: 60vh;
+
+  }
+  .card-body{
+    padding: 10px;
+    max-height: 45vh;
+  }
+  .card-img-top{
+    padding: 0;
+  }
+  .btn{
+    max-height: 5vh;
+  }
 }

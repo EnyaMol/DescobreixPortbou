@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApipuntsService {
 
-  private punts:Punt[];
+  private punts: Punt[];
   private rutagran: string;
   private url = 'http://descobreixportbou.pythonanywhere.com/apipunts/';
   constructor(private http: HttpClient) {}

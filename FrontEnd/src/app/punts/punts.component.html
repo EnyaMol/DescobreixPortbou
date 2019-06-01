@@ -1,6 +1,6 @@
 <div class="general">
   <div class="miniatures row">
-    <div class="col-12 col-sm-4 col-md-3" *ngFor="let p of punts">
+    <div class="col-12 col-sm-6 col-md-4" *ngFor="let p of punts">
       <div class="card">
         <h5 class="card-title">{{p.nompunt}}</h5>
           <div class="card-body">
@@ -65,10 +65,10 @@
               (leafletMapReady)="onMapReady12($event)">
             </div>
         </div>
-         <a href="" data-toggle="modal" data-target="#modal"
-          (click)="nom = p.nompunt; desc = p.descripcio; lat = p.latitud; lon = p.longitud;">
+         <button class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modal"
+          (click)="nom = p.nompunt; desc = p.descripcio; img = p.rutaimg;">
            <p>Més Informació</p>
-         </a>
+         </button>
       </div>
       <div class="modal"  id="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -81,8 +81,7 @@
             </div>
             <div class="modal-body">
               <p>{{desc}}</p>
-              <p>Dificultat : {{lat}}</p>
-              <p>Distancia en Kilometres : {{lon}}km</p>
+              <p>{{img}}</p>
             </div>
           </div>
         </div>
